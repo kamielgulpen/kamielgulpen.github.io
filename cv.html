@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kamiel Gülpen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #ffffff;
+        }
+
+        nav {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #3182ce;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 3rem;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: #3182ce;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #1a202c;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3182ce;
+        }
+
+        .experience-item,
+        .education-item {
+            margin-bottom: 1.8rem;
+        }
+
+        .item-header {
+            margin-bottom: 0.5rem;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a202c;
+        }
+
+        .item-meta {
+            color: #718096;
+            font-size: 0.95rem;
+            margin-top: 0.2rem;
+        }
+
+        .item-description {
+            color: #4a5568;
+            margin-top: 0.5rem;
+            line-height: 1.7;
+        }
+
+        .item-description p {
+            margin-bottom: 0.5rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.3rem;
+            color: #4a5568;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category p {
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem 1.5rem 0;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="https://nl.linkedin.com/in/kamiel-gülpen-546aa8172" target="_blank">LinkedIn</a>
+        <a href="https://github.com/kamielgulpen" target="_blank">GitHub</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Kamiel Gülpen</h1>
+            <div class="subtitle">PhD Candidate in Computational Science</div>
+            <div class="contact-info">
+                <span>📍 Amsterdam, Netherlands</span>
+                <span>📧 <a href="mailto:kgulpen@hotmail.nl">kgulpen@hotmail.nl</a></span>
+                <span>📱 +31 6 2130 4740</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Current Position</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">PhD Candidate in Computational Science</div>
+                    <div class="item-meta">RIVM & University of Amsterdam | September 2025 - Present</div>
+                </div>
+                <div class="item-description">
+                    <p>Researching social tipping points and critical transitions in complex systems. Developing agent-based models and computational tools to understand how small changes in social systems can cascade into large-scale transformations, with focus on informing policy decisions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Machine Learning Engineer</div>
+                    <div class="item-meta">Eraneos (powered by Anchormen), Amsterdam | 2022 - 2025</div>
+                </div>
+                <div class="item-description">
+                    <p>Data-driven consultancy specializing in data and AI solutions. Key projects include:</p>
+                    <ul>
+                        <li><strong>HTM Public Transportation (2023-Present):</strong> Comprehensive analysis of fare evasion patterns using statistical modeling, developed ML models (Prophet, Random Forest, XGBoost) for demand forecasting</li>
+                        <li><strong>Data Engineering:</strong> Built automated pipelines using Azure DataBricks, PySpark, and Azure Synapse</li>
+                        <li><strong>Stakeholder Engagement:</strong> Regular communication with policymakers and operational teams</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Data Engineer</div>
+                    <div class="item-meta">MC Management Consulting, Amsterdam | 2022 - 2023</div>
+                </div>
+                <div class="item-description">
+                    <p>Provided analytical support for operational methodology improvements, optimized R-scripts and data pipelines, and applied quantitative approaches to business process optimization.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Master in Computational Science</div>
+                    <div class="item-meta">University of Amsterdam | 2020 - 2022</div>
+                </div>
+                <div class="item-description">
+                    <p>Interdisciplinary program focusing on data, modeling and simulation of complex social systems:</p>
+                    <ul>
+                        <li><strong>CLS Courses:</strong> Agent-Based Modeling, Complex Systems Simulation, Stochastic Simulation, Behavior Dynamics in Social Systems</li>
+                        <li><strong>CS Courses:</strong> Large Scale Data Engineering, Distributed Algorithms</li>
+                        <li><strong>AI/ML Courses:</strong> Data Mining, NLP, Evolutionary Computing</li>
+                        <li><strong>Thesis:</strong> "A digital twin of Amsterdam's social network" - Developed comprehensive framework for generating artificial social networks using the Social Relational Attachment (SRA) model</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Minor in Programming</div>
+                    <div class="item-meta">University of Amsterdam | 2020</div>
+                </div>
+                <div class="item-description">
+                    <p>Intensive programming foundation covering Python, C, JavaScript, SQL, HTML/CSS, functional and object-oriented programming.</p>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Bachelor Beta-Gamma (Business Administration)</div>
+                    <div class="item-meta">University of Amsterdam | 2016 - 2020</div>
+                </div>
+                <div class="item-description">
+                    <p>Interdisciplinary program combining natural and social sciences with focus on quantitative methods, statistics, and data analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Research Output</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Master's Thesis: "A digital twin of Amsterdam's social network"</div>
+                    <div class="item-meta">University of Amsterdam | 2022</div>
+                </div>
+                <div class="item-description">
+                    <p>Developed innovative agent-based modeling framework for generating representative social networks. Key contributions include:</p>
+                    <ul>
+                        <li>Introduced Social Relational Attachment (SRA) model integrating homophily and heterophily principles</li>
+                        <li>Two-Group Network (2GN) algorithm for realistic degree distributions</li>
+                        <li>Integration of spatial, demographic, and social factors in network generation</li>
+                    </ul>
+                    <p><a href="https://scripties.uba.uva.nl/search?" target="_blank" style="color: #3182ce;">View thesis →</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Python (advanced), R, C, JavaScript, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>ML/AI Tools</h3>
+                    <p>Prophet, Random Forest, XGBoost, scikit-learn, TensorFlow</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <p>Azure DataBricks, PySpark, Azure Synapse, Pandas, NumPy</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Modeling</h3>
+                    <p>Agent-Based Modeling, Network Science, Complex Systems Simulation</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            © 2025 Kamiel Gülpen
+        </footer>
+    </div>
+</body>
+</html>
