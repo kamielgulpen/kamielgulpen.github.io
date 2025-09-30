@@ -57,7 +57,7 @@
             right: 0;
             width: 50%;
             height: 100vh;
-            opacity: 0.06;
+            opacity: 0.15;
             pointer-events: none;
             z-index: 0;
         }
@@ -127,6 +127,7 @@
 
         section {
             margin-bottom: 3rem;
+            clear: both;
         }
 
         h2 {
@@ -195,9 +196,16 @@
             .profile-photo {
                 float: none;
                 display: block;
-                margin: 0 auto 1.5rem;
+                margin: 0 auto 1rem;
                 width: 150px;
                 height: 150px;
+            }
+
+            .photo-caption {
+                float: none;
+                width: auto;
+                text-align: center;
+                margin: 0 0 1.5rem 0;
             }
 
             header h1 {
@@ -205,13 +213,9 @@
                 text-align: center;
             }
 
-            header .info {
-                text-align: center;
-            }
-
             .network-bg {
                 width: 100%;
-                opacity: 0.04;
+                opacity: 0.1;
             }
         }
     </style>
@@ -257,16 +261,19 @@
 
     <div class="container">
         <header>
-            <!-- Replace with your photo URL -->
-            <img src="profiel_foto.jpg" 
-                 alt="Kamiel Gülpen" 
-                 class="profile-photo">
+            <!-- Float right element must come first in HTML -->
+            <div class="header-side">
+                <!-- Replace with your photo URL -->
+                <img src="profiel_foto.jpg" 
+                     alt="Kamiel Gülpen" 
+                     class="profile-photo">
+                <div class="info">
+                    RIVM & University of Amsterdam<br>
+                    Science Park, Amsterdam
+                </div>
+            </div>
             
             <h1>Kamiel Gülpen</h1>
-            <div class="info">
-                RIVM & University of Amsterdam<br>
-                Science Park, Amsterdam
-            </div>
         </header>
 
         <main>
