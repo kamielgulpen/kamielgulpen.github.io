@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamiel Gülpen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            color: #2d3748;
+            background: #ffffff;
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem 0;
+            display: flex;
+            justify-content: flex-end;
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #4a5568;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: #3182ce;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 2rem 3rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .network-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            opacity: 0.06;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            order: 2;
+        }
+
+        .header-text {
+            order: 1;
+        }
+
+        .header-text h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-text .info {
+            color: #718096;
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 2.5rem;
+            color: #2d3748;
+        }
+
+        .intro p {
+            margin-bottom: 1.2rem;
+        }
+
+        .big-question {
+            background: #f7fafc;
+            border-left: 4px solid #3182ce;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #2d3748;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #1a202c;
+            margin-bottom: 1.2rem;
+            margin-top: 2.5rem;
+        }
+
+        .section-content {
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        .section-content p {
+            margin-bottom: 1rem;
+        }
+
+        .interests-list {
+            list-style: none;
+            padding-left: 0;
+            margin: 1rem 0;
+        }
+
+        .interests-list li {
+            padding: 0.4rem 0;
+            color: #4a5568;
+        }
+
+        .interests-list li::before {
+            content: "→ ";
+            color: #3182ce;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .placeholder {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            color: #718096;
+            font-style: italic;
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            color: #a0aec0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1.5rem 1.5rem 0;
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .profile-photo {
+                float: none;
+                display: block;
+                margin: 0 auto 1.5rem;
+                width: 150px;
+                height: 150px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            header .info {
+                text-align: center;
+            }
+
+            .network-bg {
+                width: 100%;
+                opacity: 0.04;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="https://nl.linkedin.com/in/kamiel-gülpen-546aa8172" target="_blank">LinkedIn</a>
+        <a href="https://github.com/kamielgulpen" target="_blank">GitHub</a>
+    </nav>
+
+    <!-- Network Background -->
+    <svg class="network-bg" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="250" cy="150" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="400" cy="120" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="350" cy="280" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="150" cy="320" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="500" cy="250" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="300" cy="420" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="480" cy="400" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="200" cy="500" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="420" cy="550" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="280" cy="650" r="12" fill="#3182ce" opacity="0.5"/>
+        <circle cx="120" cy="680" r="12" fill="#3182ce" opacity="0.5"/>
+        
+        <line x1="100" y1="100" x2="250" y2="150" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="250" y1="150" x2="400" y2="120" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="400" y1="120" x2="500" y2="250" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="250" y1="150" x2="350" y2="280" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="350" y1="280" x2="300" y2="420" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="150" y1="320" x2="300" y2="420" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="500" y1="250" x2="480" y2="400" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="100" y1="100" x2="150" y2="320" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="300" y1="420" x2="200" y2="500" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="480" y1="400" x2="420" y2="550" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="200" y1="500" x2="280" y2="650" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="280" y1="650" x2="120" y2="680" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+        <line x1="420" y1="550" x2="280" y2="650" stroke="#3182ce" stroke-width="2" opacity="0.3"/>
+    </svg>
+
+    <div class="container">
+        <header>
+            <!-- Replace with your photo URL -->
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect fill='%23e2e8f0' width='180' height='180'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='70' fill='%234a5568'%3EKG%3C/text%3E%3C/svg%3E" 
+                 alt="Kamiel Gülpen" 
+                 class="profile-photo">
+            
+            <h1>Kamiel Gülpen</h1>
+            <div class="info">
+                RIVM & University of Amsterdam<br>
+                Science Park, Amsterdam
+            </div>
+        </header>
+
+        <main>
+            <div class="intro">
+                <p>Hi, I'm Kamiel — a PhD student in Computational Science trying to understand how societies tip from one state to another. I study the mechanisms behind social tipping points and how we can simulate these critical transitions to inform better policy decisions.</p>
+
+                <p>My research sits at the intersection of complex systems, network science, and social dynamics. I'm working at RIVM (National Institute for Public Health and the Environment) and the University of Amsterdam, where I develop agent-based models and computational tools to explore how small changes in social systems can cascade into large-scale transformations.</p>
+                
+                <div class="big-question">
+                    How can we use the idea of social tipping points for policy, and how can we simulate this?
+                </div>
+
+                <p>I'm particularly interested in the feedback loops between individual behavior, social influence, and collective outcomes — and in designing interventions that can help societies navigate toward positive tipping points. When I'm not modeling social systems or debugging code, I'm probably exploring Amsterdam by bike or discussing the latest developments in complexity science.</p>
+            </div>
+
+            <section>
+                <h2>Research Interests</h2>
+                <div class="section-content">
+                    <ul class="interests-list">
+                        <li>Social tipping points and critical transitions</li>
+                        <li>Agent-based modeling and computational social science</li>
+                        <li>Network dynamics and social influence</li>
+                        <li>Complex systems for policy and decision-making</li>
+                        <li>Simulation methods for social phenomena</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Publications</h2>
+                <div class="section-content">
+                    <div class="placeholder">
+                        Publications and working papers coming soon. Check back later or connect with me on LinkedIn for updates.
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Teaching</h2>
+                <div class="section-content">
+                    <div class="placeholder">
+                        Information about courses, workshops, and teaching activities will be posted here.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            © 2025 Kamiel Gülpen
+        </footer>
+    </div>
+</body>
+</html>
